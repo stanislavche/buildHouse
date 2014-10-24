@@ -1,0 +1,3 @@
+BuildHouse.LightBox = function(){
+
+};

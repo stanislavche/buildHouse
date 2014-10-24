@@ -1,0 +1,20 @@
+{
+  "name": "buildHouse",
+  "version": "0.0.1",
+  "description": "BuildHouse site frontend",
+  "repository": {
+    "type": "none",
+    "url": "none"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-jade": "~0.11.0",
+    "grunt-contrib-jshint": "~0.6.5",
+    "grunt-csso": "~0.5.3",
+    "grunt-contrib-less": "~0.8.3"
+  }
+}
