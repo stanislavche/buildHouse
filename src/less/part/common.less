@@ -22,11 +22,20 @@ h1,h2{
 	margin: 0 auto;
 	width: @wrapperwidth;;
 	background-image: url('../img/mainback.jpg');
+	@media @tabletLandscape{
+		width: 100%;
+	}
 }
 .wrapper{
 	margin: 0 auto;
 	width: 100%;
 	position: relative;
+	@media @tabletLandscape{
+		width: 98%;
+	}
+	@media @mobilePortrait{
+		width: 320px;
+	}
 }
 //No decoration for links
 a{
@@ -44,17 +53,6 @@ a{
 	}
 	&:active{
 		opacity: 0.5;
-	}
-}
-.content{
-	.wrapper{
-		width: 1200px;
-		/*@media @tabletPortrait{
-			width: 98%;
-		}
-		@media @mobilePortrait{
-			width: 320px;
-		}*/
 	}
 }
 .hidden-block{
@@ -98,6 +96,11 @@ a{
 	font-size: 36px;
 	text-transform: uppercase;
 	font-weight: 400;
+	&>span{
+		font-size: 60px;
+		display: inline-block;
+		vertical-align: -5px;
+	}
 }
 .form-button{
 	top: 0;

@@ -384,10 +384,25 @@ h2 {
   width: 1200px;
   background-image: url('../img/mainback.jpg');
 }
+@media only screen and (max-width: 1600px) {
+  .content-wrap {
+    width: 100%;
+  }
+}
 .wrapper {
   margin: 0 auto;
   width: 100%;
   position: relative;
+}
+@media only screen and (max-width: 1600px) {
+  .wrapper {
+    width: 98%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .wrapper {
+    width: 320px;
+  }
 }
 a {
   -webkit-transition: all 0.3s;
@@ -406,15 +421,6 @@ a:hover {
 }
 a:active {
   opacity: 0.5;
-}
-.content .wrapper {
-  width: 1200px;
-  /*@media @tabletPortrait{
-			width: 98%;
-		}
-		@media @mobilePortrait{
-			width: 320px;
-		}*/
 }
 .hidden-block {
   display: none;
@@ -457,6 +463,11 @@ a:active {
   font-size: 36px;
   text-transform: uppercase;
   font-weight: 400;
+}
+.section-title > span {
+  font-size: 60px;
+  display: inline-block;
+  vertical-align: -5px;
 }
 .form-button {
   top: 0;
@@ -670,6 +681,7 @@ header > .wrapper:after {
 }
 .top-block__item-image {
   display: inline-block;
+  max-width: 100%;
 }
 .top-block__item-description {
   margin: -4px 0 0;
@@ -816,11 +828,6 @@ header > .wrapper:after {
 .steps__title {
   color: #fff;
 }
-.steps__title > span {
-  font-size: 60px;
-  display: inline-block;
-  vertical-align: -5px;
-}
 .steps__list {
   margin: 0;
   padding: 0;
@@ -859,4 +866,168 @@ header > .wrapper:after {
   font-size: 24px;
   line-height: 24px;
   margin-top: -30px;
+}
+.problems {
+  position: relative;
+  background: url('../img/secback.jpg');
+  padding-bottom: 92px;
+}
+.problems__title {
+  padding-top: 26px;
+  padding-bottom: 40px;
+  color: #fff;
+  font-size: 34px;
+}
+.problems__list {
+  padding: 0;
+  list-style-type: none;
+  width: 59%;
+  margin: 0 auto;
+}
+.problems__item {
+  display: block;
+  padding-left: 64px;
+  position: relative;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  color: #ccc;
+  font-size: 24px;
+  line-height: 28px;
+  padding-bottom: 16px;
+}
+.problems__image {
+  position: absolute;
+  left: 0;
+  padding: 0;
+  display: block;
+}
+.benefits {
+  position: relative;
+  padding-bottom: 55px;
+}
+.benefits__title {
+  display: block;
+  margin: 0 auto;
+  margin-top: -68px;
+  background: #fff;
+  color: #ff9900;
+  width: 80%;
+  padding: 30px 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 6px 0 #2c2c2d;
+  -moz-box-shadow: 0px 0px 6px 0 #2c2c2d;
+  box-shadow: 0px 0px 6px 0 #2c2c2d;
+}
+.benefits__list {
+  padding: 0;
+  list-style-type: none;
+  width: 59%;
+  margin: 0 auto;
+  margin-top: 58px;
+}
+.benefits__item {
+  display: block;
+  padding-left: 64px;
+  position: relative;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  color: #000;
+  font-size: 24px;
+  line-height: 28px;
+  padding-bottom: 16px;
+}
+.houses {
+  position: relative;
+  padding-bottom: 55px;
+}
+.houses__title {
+  position: relative;
+  margin: 0;
+}
+.houses__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 77%;
+  margin-left: 17%;
+}
+.houses__item {
+  position: relative;
+  margin: 0;
+  display: block;
+}
+.houses__item-title {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 29px;
+  margin-bottom: 24px;
+}
+.houses__item-container {
+  position: relative;
+  *zoom: 1;
+}
+.houses__item-container:before,
+.houses__item-container:after {
+  content: " ";
+  display: table;
+}
+.houses__item-container:after {
+  clear: both;
+}
+.houses__items-gallary {
+  display: block;
+  width: 44%;
+  position: relative;
+  float: left;
+}
+.houses__items-image {
+  display: block;
+  width: 100%;
+}
+.houses__item-photo-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: block;
+  *zoom: 1;
+  width: 100%;
+}
+.houses__item-photo-list:before,
+.houses__item-photo-list:after {
+  content: " ";
+  display: table;
+}
+.houses__item-photo-list:after {
+  clear: both;
+}
+.houses__item-photo {
+  margin: 0;
+  float: left;
+  width: 32%;
+  position: relative;
+}
+.houses__item-photo + .houses__item-photo {
+  margin-left: 2%;
+}
+.houses__items-info {
+  float: right;
+  width: 53.3%;
+}
+.houses__items-info-title {
+  margin: 0;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  line-height: 24px;
+}
+.houses__items-info-description {
+  margin: 0;
+  font-style: italic;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  padding-bottom: 16px;
 }

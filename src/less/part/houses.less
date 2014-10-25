@@ -1,0 +1,78 @@
+.houses{
+	position: relative;
+	padding-bottom: 55px;
+	&__title{
+		position: relative;
+		margin: 0;
+	}
+	&__list{
+		position: relative;
+		margin: 0;
+		padding: 0;
+		width: 77%;
+		margin-left: 17%;
+	}
+	&__item{
+		position: relative;
+		margin: 0;
+		display: block;
+	}
+	&__item-title{
+		position: relative;
+		font-size: 30px;
+		font-weight: bold;
+		margin-top: 29px;
+		margin-bottom: 24px;
+	}
+	&__item-container{
+		position: relative;
+		.clearfix();
+	}
+	&__items-gallary{
+		display: block;
+		width: 44%;
+		position: relative;
+		float: left;
+	}
+	&__items-image{
+		display: block;
+		width: 100%;
+	}
+	&__item-photo-list{
+		position: relative;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		display: block;
+		.clearfix();
+		width: 100%;
+	}
+	&__item-photo{
+		margin: 0;
+		float: left;
+		width: 32%;
+		position: relative;
+		&+&{
+			margin-left: 2%;
+		}
+	}
+	&__items-info{
+		float: right;
+		width: 53.3%;
+	}
+	&__items-info-title{
+		margin: 0;
+		font-family: @PTSans;
+		font-size: 24px;
+		font-weight: 700;
+		padding-bottom: 10px;
+		line-height: 24px;
+	}
+	&__items-info-description{margin: 0;
+		font-style: italic;
+		font-family: @PTSans;
+		font-size: 18px;
+		line-height: 22px;
+		padding-bottom: 16px;
+	}
+}
