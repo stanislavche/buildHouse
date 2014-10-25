@@ -10,8 +10,79 @@ block vars
 	- var page_description = "Используя прогресивные технологии мы делаем привлекательный дизайн и удобную функциональность. +7 (499) 653-77-96, +7 (812) 748-25-96. Главный офис: Санкт-Петербург, ул. Восстания, д.6 А, офис 77";
 	- var site_title = "Func - Web mobile social";
 block content
-	section.home-page
+	section.top-block
 		.wrapper
-			.home-info
-				.left-side
-						
+			.top-block__container
+				h1.top-block__title.text-center
+					| Построим дом Вашей мечты за 2 месяца в Ростове и области
+				form(action="#" name="joinheader")#formRegistration.top-block__form
+					.top-block__form-header.z-index2
+						| Закажите бесплатный расчёт стоимости вашего дома сегодня и получите скидку
+						span 100’000 руб.
+						| на строительные работы!
+					.top-block__form-action.z-index1
+						| Акция
+					label
+						p.form-text.text-center
+							|Введите имя
+						input(type="text").form-input
+					label
+						p.form-text.text-center
+							|Введите телефон
+						input(type="text").form-input
+					button.form-button
+						| Рассчитать стоимость
+			ul.top-block__list
+				li.top-block__item
+					img(src="img/top/top1.png", alt="free project").top-block__item-image
+					p.top-block__item-description
+						| Бесплатный подбор проекта  дома и расчёт сметы проекта
+				li.top-block__item
+					img(src="img/top/top2.png", alt="gurantee").top-block__item-image
+					p.top-block__item-description
+						| 2 года гарантии на фундамент и стены
+				li.top-block__item
+					img(src="img/top/top3.png", alt="cost").top-block__item-image
+					p.top-block__item-description
+						| Стоимость от 12 тыс руб / кв. метр
+				li.top-block__item
+					img(src="img/top/top4.png", alt="timing").top-block__item-image
+					p.top-block__item-description
+						| Сроки постройки от 2 месяцев
+	section.services
+		.wrapper
+			h2.services__title.text-center.section-title
+				| НАШИ УСЛУГИ:
+			ul.services__list
+				li.services__item
+					img.services__item-image(src="img/services/serv1.png", alt="services")
+					h3.services__item-title
+						| ПОДБОР ЗЕМЕЛЬНОГО УЧАСТКА
+					p.services__item-description
+						| Наши специалисты подберут для вас лучшие варианты земельных участков, подходящих для строительства уютного и комфортного дома.
+					a(href="#formRegistration").js-colorboxJoin.services__link
+						| Узнать подробнее...
+				li.services__item
+					img.services__item-image(src="img/services/serv2.png", alt="services")
+					h3.services__item-title
+						| ПРОЕКТИРОВАНИЕ ДОМОВ ЛЮБОЙ СЛОЖНОСТИ
+					p.services__item-description
+						| Наш архитектурный отдел имеет большой опыт в проектировании домов и коттеджей различного уровня и класса. Мы поможем вам в выборе типового проекта и его привязке на конкретном участке, проведём корректировку типового проекта либо выполним индивидуальный проект вашего дома. Мы делаем проекты, которые способны удовлетворить самые изысканные вкусы.
+					a(href="#formRegistration").js-colorboxJoin.services__link
+						| Узнать подробнее...
+				li.services__item
+					img.services__item-image(src="img/services/serv3.png", alt="services")
+					h3.services__item-title
+						| СТРОИТЕЛЬСТВО ДОМОВ И КОТТЕДЖЕЙ
+					p.services__item-description
+						| Мы осуществляем строительство коттеджей в Ростове согласно пожеланиям наших клиентов и в полном соответствии с требованиями снип'ов. Мы привлекаем только высококвалифицированных специалистов для работы над каждым проектом и используем только высококачественные и долговечные материалы.
+					a(href="#formRegistration").js-colorboxJoin.services__link
+						| расчитать стоимость работ...
+				li.services__item
+					img.services__item-image(src="img/services/serv4.png", alt="services")
+					h3.services__item-title
+						| СТРОИТЕЛЬНЫЕ РАБОТЫ
+					p.services__item-description
+						| Наши специалисты выполнят полный спектр строительных работ. Мы также предлагаем вам строительство пристроек, установку заборов, укладку тротуарной плитки, а так же ландшафтный дизайн и отделочные работы. Отлаженная организация труда на объекте позволяет нам выполнять работы с превосходным качеством и в оговоренные сроки.
+					a(href="#formRegistration").js-colorboxJoin.services__link
+						| расчитать стоимость работ...

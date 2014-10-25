@@ -78,7 +78,7 @@ module.exports = function(grunt) {
                 files: ['src/less/**'],
                 tasks: ['customLess'],
                 options: {
-                    livereload: false
+                    livereload: true
                 }
             },
             css: {
