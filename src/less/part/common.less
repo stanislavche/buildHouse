@@ -15,6 +15,9 @@ h1,h2{
 	color: #222;
 	margin: 0;
 }
+*{
+	.box-sizing (border-box);
+}
 .content-wrap{
 	margin: 0 auto;
 	width: @wrapperwidth;;
@@ -23,17 +26,24 @@ h1,h2{
 .wrapper{
 	margin: 0 auto;
 	width: 100%;
+	position: relative;
 }
 //No decoration for links
 a{
 	.transition(@linkAnimation);
 	outline: none;
+	color: #051b8b;
 	text-decoration: none;
+	font-size: 24px;
 	&:visited{
 		color: inherit;
 	}
 	&:hover{
 		text-decoration: none;
+		color: #fe8b07;
+	}
+	&:active{
+		opacity: 0.5;
 	}
 }
 .content{
@@ -71,6 +81,9 @@ a{
 .text-right{
 	text-align: right;
 }
+.text-left{
+	text-align: left;
+}
 .z-index1{
 	z-index: 1;
 	position: relative;
@@ -80,9 +93,14 @@ a{
 	position: relative;
 }
 .section-title{
-
+	position: relative;
+	color: #000;
+	font-size: 36px;
+	text-transform: uppercase;
+	font-weight: 400;
 }
 .form-button{
+	top: 0;
 	.transition(@linkAnimationFast);
 	outline: none;
 	background: #ffba62; /* Old browsers */
@@ -100,7 +118,8 @@ a{
 	-moz-border-radius:12px;
 	-webkit-border-radius:12px;
 	border-radius:12px;
-	display:inline-block;
+	display:block;
+	margin: 0 auto;
 	cursor:pointer;
 	color:#ffffff;
 	border: none;
@@ -123,8 +142,28 @@ a{
 	}
 }
 .form-text{
-	
+	color: #660606;
+	font-size: 20px;
+	font-family: @PTSans;
+	margin: 0;
+	position: relative;
+	line-height: 22px;
 }
 .form-input{
-		
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	background: white; 
+    border: 1px solid #c37f22; 
+    .border-radius (7px); 
+    .box-shadow (3px 3px 12px 0px #000 inset); 
+    color: #666;
+    padding: 8px;
+	width: 266px;
+    outline: none;
+    margin-bottom: 10px;
+}
+.text-shadow{
+	text-shadow: 2px 1px 3px #000000;
+	filter: dropshadow(color=#000000, offx=2, offy=1);
 }

@@ -1,0 +1,80 @@
+.type{
+	position: relative;
+	padding-bottom: 40px;
+	&__title{
+		margin-bottom: 55px;
+	}
+	&__list{
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		position: relative;
+		display: block;
+	}
+	&__item{
+		margin: 0;
+		display: inline-block;
+		width: 33%;
+		vertical-align: top;
+		position: relative;
+		padding: 0 2%;
+	}
+	&__image{
+		display: block;
+		position: relative;
+		width: 100%;
+	}
+	&__item-title{
+		background: url('../img/type/wood.jpg') no-repeat;
+		background-size: cover;
+		display: block;
+		font-family: @PTSans;
+		font-weight: bold;
+		font-style: italic;
+		color: #fff;
+		margin: 0;
+		padding: 9px 0 14px;
+		font-size: 36px;
+		line-height: 35px;
+	}
+	&__tarif-container{
+		position: relative;
+		width: 100%;
+		background: #fff3df;
+		.border-bottom-right-radius(10px);
+		.border-bottom-left-radius(10px);
+		-webkit-box-shadow: 2px 1px 8px 0px #CCCCCC;
+		-moz-box-shadow: 2px 1px 8px 0px #CCCCCC;
+		box-shadow: 2px 1px 8px 0px #CCCCCC;
+		padding: 20px 20px 82px;
+	}
+	&__tarif-list{
+		margin: 0;
+		padding: 0;
+		display: block;
+		list-style-type: none;
+		position: relative;
+		height: 338px;
+	}
+	&__tarif-item{
+		display: block;
+		width: 100%;
+		position: relative;
+		font-size: 20px;
+		border-bottom: 1px solid #beb7aa;
+		line-height: 18px;
+		font-family: @PTSans;
+		padding: 10px 0;
+		&:last-child{
+			border: none;
+		}
+	}
+	&__tarif-info{
+		font-size: 24px;
+		font-family: @PTSans;
+		margin: 0;
+		&>span{
+			font-weight: bold;
+		}
+	}
+}

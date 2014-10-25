@@ -1,38 +1,30 @@
 extends ../layout
-block vars
-	- var description = "Мы создаем под ключ сайты, мобильные приложения и приложения для социальных сетей";
-	- var keywords = "web, mobile, social, ux, branding, support, проектирование, дизайн, сайты, разаботка, плоский дизайн, зенит, ска, триколор тв, в контакте, самсунг, samsung";
-	- var pagename = "index";
-	- var pagetitle = "Главная | Func. Мы создаем сайты, мобильные приложения и приложения для социальных сетей.";
-	- var title = "Func - Web mobile social";
-	- var image_url = "http://funcfunc.ru/img/func.gif";
-	- var page_url = "http://funcfunc.ru/";
-	- var page_description = "Используя прогресивные технологии мы делаем привлекательный дизайн и удобную функциональность. +7 (499) 653-77-96, +7 (812) 748-25-96. Главный офис: Санкт-Петербург, ул. Восстания, д.6 А, офис 77";
-	- var site_title = "Func - Web mobile social";
 block content
 	section.top-block
 		.wrapper
+			img(src="img/top/headimg.png", alt="header Image").top-block__constainer-image
 			.top-block__container
-				h1.top-block__title.text-center
+				h1.top-block__title.text-center.text-shadow
 					| Построим дом Вашей мечты за 2 месяца в Ростове и области
 				form(action="#" name="joinheader")#formRegistration.top-block__form
-					.top-block__form-header.z-index2
-						| Закажите бесплатный расчёт стоимости вашего дома сегодня и получите скидку
-						span 100’000 руб.
-						| на строительные работы!
-					.top-block__form-action.z-index1
-						| Акция
-					label
-						p.form-text.text-center
-							|Введите имя
-						input(type="text").form-input
-					label
-						p.form-text.text-center
-							|Введите телефон
-						input(type="text").form-input
-					button.form-button
-						| Рассчитать стоимость
-			ul.top-block__list
+					img(src="img/formblick.png", alt="join form").top-block__form-image
+					img(src="img/top-arrow.png", alt="join form").top-block__form-topimage.z-index2
+					.top-block__form-header.text-center.z-index2
+						| Закажите бесплатный расчёт <br> стоимости вашего дома сегодня и получите<br>скидку <span> 100’000 руб.</span> на строительные работы!
+					.top-block__form-action.z-index1.text-center
+						| Акция!
+					.top-block__form-inputs
+						label.text-center
+							p.form-text
+								|Введите имя
+							input(type="text").form-input
+						label.text-center
+							p.form-text
+								|Введите телефон
+							input(type="text").form-input
+						button.form-button
+							| Рассчитать стоимость
+			ul.top-block__list.text-center
 				li.top-block__item
 					img(src="img/top/top1.png", alt="free project").top-block__item-image
 					p.top-block__item-description
@@ -77,7 +69,7 @@ block content
 					p.services__item-description
 						| Мы осуществляем строительство коттеджей в Ростове согласно пожеланиям наших клиентов и в полном соответствии с требованиями снип'ов. Мы привлекаем только высококвалифицированных специалистов для работы над каждым проектом и используем только высококачественные и долговечные материалы.
 					a(href="#formRegistration").js-colorboxJoin.services__link
-						| расчитать стоимость работ...
+						| Расчитать стоимость работ...
 				li.services__item
 					img.services__item-image(src="img/services/serv4.png", alt="services")
 					h3.services__item-title
@@ -85,4 +77,147 @@ block content
 					p.services__item-description
 						| Наши специалисты выполнят полный спектр строительных работ. Мы также предлагаем вам строительство пристроек, установку заборов, укладку тротуарной плитки, а так же ландшафтный дизайн и отделочные работы. Отлаженная организация труда на объекте позволяет нам выполнять работы с превосходным качеством и в оговоренные сроки.
 					a(href="#formRegistration").js-colorboxJoin.services__link
-						| расчитать стоимость работ...
+						| Расчитать стоимость работ...
+	section.type
+		.wrapper
+			h2.type__title.text-center.section-title
+				| Выберите подходящий вариант строительства:
+			ul.type__list.text-center
+				li.type__item
+					img(src="img/type/type1.png", alt="tarif").type__image
+					h3.type__item-title.text-center.text-shadow
+						| Эконом
+					.type__tarif-container
+						ul.type__tarif-list.text-left
+							li.type__tarif-item
+								| Эскиз проекта
+							li.type__tarif-item
+								| Железобетонный ленточный фундамент
+							li.type__tarif-item
+								| Внутренние стены – автоклавный газоблок
+							li.type__tarif-item
+								| Фасад – декоративная штукатурка
+							li.type__tarif-item
+								| Деревянные перекрытия
+							li.type__tarif-item
+								| Кровля - профнастил
+							li.type__tarif-item
+								| Под чистовую отделку
+						p.type__tarif-info.text-center
+							| Стоимость метра кв.
+							br
+							span от 12 тыс. Руб/метр.кв.
+				li.type__item
+					img(src="img/type/type2.png", alt="tarif").type__image
+					h3.type__item-title.text-center.text-shadow
+						| Стандарт
+					.type__tarif-container
+						ul.type__tarif-list.text-left
+							li.type__tarif-item
+								| 3D визуализация проекта
+							li.type__tarif-item
+								| Железобетонный ленточный фундамент
+							li.type__tarif-item
+								| Внутренние стены – кирпич
+							li.type__tarif-item
+								| Фасад – облицовочный керамический кирпич
+							li.type__tarif-item
+								| Плитные перекрытия
+							li.type__tarif-item
+								| Кровля - металлочерепица
+							li.type__tarif-item
+								| Под чистовую отделку
+						p.type__tarif-info.text-center
+							| Стоимость метра кв.
+							br
+							span от 16 тыс. Руб/метр.кв.
+				li.type__item
+					img(src="img/type/type3.png", alt="tarif").type__image
+					h3.type__item-title.text-center.text-shadow
+						| Премиум
+					.type__tarif-container
+						ul.type__tarif-list.text-left
+							li.type__tarif-item
+								| Фотореалистичная визуализация проекта (при участии дизайнера-архитектора)
+							li.type__tarif-item
+								| Внутренные стены – кирпич, каркасные перегородки
+							li.type__tarif-item
+								| Комбинированный фасад
+							li.type__tarif-item
+								| Монолитно-бетонные перекрытия
+							li.type__tarif-item
+								| Кровля – гибкая черепица
+							li.type__tarif-item
+								| Под чистовую отделку
+						p.type__tarif-info.text-center
+							| Стоимость метра кв.
+							br
+							span от 23 тыс. Руб/метр.кв.
+	section.steps
+		.wrapper
+			h2.steps__title.text-center.section-title.text-shadow
+				| Всего <span>7</span> шагов и ваш дом готов:
+			ul.steps__list.text-center
+				li.steps__item
+					img(src="img/steps/7_1.png", alt="step").steps__image
+					.steps__counter.z-index2
+						| 1
+					.steps__info
+						| Вы оставляете заявку на предварительный расчёт стоимости дома
+				li.steps__item
+					img(src="img/steps/7_2.png", alt="step").steps__image
+					.steps__counter.z-index2
+						| 2
+					.steps__info
+						| Мы рассчитаем предварительную стоимость вашего дома в течение 3 часов после обращения к нам
+				li.steps__item
+					img(src="img/steps/7_1.png", alt="step").steps__image
+					.steps__counter.z-index2
+						| 3
+					.steps__info
+						| Мы подбираем проект дома и определяем желаемые материалы
+				li.steps__item
+					img(src="img/steps/7_2.png", alt="step").steps__image
+					.steps__counter.z-index2
+						| 4
+					.steps__info
+						| Утверждение проекта. Точный расчёт стоимости и сроков строительства, создание  журнала работ
+				li.steps__item
+					img(src="img/steps/7_2.png", alt="step").steps__image
+					.steps__counter.z-index2
+						| 5
+					.steps__info
+						| Юридическое оформление сделки и подписание договора
+				li.steps__item
+					img(src="img/steps/7_1.png", alt="step").steps__image
+					.steps__counter.z-index2
+						| 6
+					.steps__info
+						| Поэтапное выполнение работ, соблюдая технологию строительства, согласно журнала работ
+				li.steps__item
+					img(src="img/steps/7_2.png", alt="step").steps__image
+					.steps__counter.z-index2
+						| 7
+					.steps__info
+						| Ваш Дом готов!
+	section.problems
+		.wrapper
+			h2.problems__title.text-center.section-title
+				| <span>5</span> ключевых проблем с которыми сталкиваются 90% желающих построить дом:
+			ul.problems__list
+				li.problems__item
+					img(src="img/problems/p1.png", alt="problem").problems__image
+					| Приходится заниматься только стройкой, нужно самому бегать и искать подрядчиков на все сопутствующие работы
+				li.problems__item
+					img(src="img/problems/p2.png", alt="problem").problems__image
+					| Строители экономят на материалах, и пренебрегают технологией строительства
+				li.problems__item
+					img(src="img/problems/p3.png", alt="problem").problems__image
+					| Нет гарантий качества, дом разваливается через год-два
+				li.problems__item
+					img(src="img/problems/p4.png", alt="problem").problems__image
+					| Затягиваются сроки строительства
+				li.problems__item
+					img(src="img/problems/p5.png", alt="problem").problems__image
+					| Увеличивается стоимость дома по ходу стройки
+
