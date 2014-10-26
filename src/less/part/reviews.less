@@ -3,7 +3,6 @@
 	padding-top: 66px;
 	&__title{
 		position: relative;
-		font-size: 44px;
 	}
 	&__list{
 		list-style-type: none;
@@ -11,33 +10,62 @@
 		margin: 0 auto;
 		width: 77%;
 		margin-top: 45px;
+		@media @mobileLandscape{
+			margin-top: 20px;
+		}
+		@media @mobilePortrait{
+			width: 90%;
+		}
 	}
 	&__item{
 		position: relative;
 		.clearfix();
 		padding-bottom: 67px;
+		@media @mobileLandscape{
+			padding-bottom: 30px;
+		}
 	}
 	&__image{
 		float: left;
+		@media @mobileLandscape{
+			float: none;
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 10px;
+		}
 	}
 	&__article{
 		padding-left: 236px;
 		position: relative;
+		@media @mobileLandscape{
+			padding: 0;
+		}
 	}
 	&__name{
 		font-weight: bold;
 		font-size: 30px;
 		margin: 0;
 		line-height: 22px;
+		@media @mobileLandscape{
+			text-align: center;
+			font-size: 26px;
+		}
 	}
 	&__work{
 		font-size: 24px;
 		margin: 0;
 		margin-bottom: 15px;
+		@media @mobileLandscape{
+			text-align: center;
+			font-size: 22px;
+		}
 	}
 	&__description{
 		font-size: 20px;
 		line-height: 24px;
 		margin: 0;
+		@media @tabletPortrait{
+			font-size: 18px;
+		}
 	}
 }

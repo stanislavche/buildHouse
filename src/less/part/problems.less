@@ -7,12 +7,18 @@
 		padding-bottom: 40px;
 		color: #fff;
 		font-size: 34px;
+		@media @mobileLandscape{
+			font-size: 24px;
+		}
 	}
 	&__list{
 		padding: 0;
 		list-style-type: none;
-		width: 59%;
+		width: 708px;
 		margin: 0 auto;
+		@media @mobileLandscape{
+			width: 90%;
+		}
 	}
 	&__item{
 		display: block;
@@ -23,6 +29,9 @@
 		font-size: 24px;
 		line-height: 28px;
 		padding-bottom: 16px;
+		@media @mobileLandscape{
+			font-size: 18px;
+		}
 	}
 	&__image{
 		position: absolute;

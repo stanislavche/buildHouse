@@ -5,22 +5,34 @@
 	&__title{
 		padding: 0 120px;
 		font-size: 24px;
+		@media @tabletPortrait{
+			padding: 0 40px;
+			font-size: 22px;
+		}
+		@media @mobileLandscape{
+			padding: 0 10px;
+		}
 	}
 	&__pattern{
 		position: absolute;
 		top: 0;
 		&_left{
-			left: 30px;
+			left: 20px;
 		}
 		&_right{
-			right: 30px;
-
-		}	
+			right: 20px;
+		}
+		@media @tabletPortrait{
+			display: none;
+		}
 	}
 	&__description{
 		font-size: 20px;
 		text-transform: uppercase;
 		margin-top: 24px;
+		@media @tabletPortrait{
+			font-size: 18px;
+		}
 	}
 	&__list{
 		margin: 0;
@@ -34,6 +46,7 @@
 		padding: 0;
 		display: inline-block;
 		width: 300px;
+		margin-bottom: 10px;
 	}
 	&__link{
 		display: inline-block;

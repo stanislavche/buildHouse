@@ -5,18 +5,29 @@ header{
 	position: relative;
 	&>.wrapper{
 		.clearfix();
+		@media @mobilePortrait{
+			width: 98%;
+		}
 	}
 }
 .main-logo{
 	float: left;
 	margin-left: 10px;
 	margin-top: 10px;
+	@media @tabletLandscape{
+		width: 100%;
+		margin: 10px 0 0;
+		text-align: center;
+	}
 }
 .header-list{
 	margin: 0;
 	padding: 0;
 	float: right;
 	list-style-type: none;
+	@media @tabletLandscape{
+		width: 100%;
+	}
 }
 .header-item{
 	width: 310px;
@@ -25,13 +36,35 @@ header{
 	color: #fefefe;
 	display: inline-block;
 	vertical-align: top;
+	@media @mobileLandscape{
+		width: 48%;
+		font-size: 20px;
+		padding-left: 17px;
+	}
+	@media @mobilePortrait{
+		width: 100%;
+		padding: 0 17px;
+		text-align: center;
+	}
 	&>span{
 		font-weight: bold;
 		font-size: 35px;
 		line-height: 25px;
+		@media @mobileLandscape{
+			font-size: 24px;
+		}
 	}
 	&+&{
 		margin-left: 152px;
 		padding-right: 17px;
+		@media @tabletLandscape{
+			margin-left: 110px;
+		}
+		@media @mobileLandscape{
+			margin-left: 4%;
+		}
+		@media @mobilePortrait{
+			margin: 0;
+		}
 	}
 }

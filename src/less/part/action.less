@@ -4,8 +4,18 @@
 	background-size: cover;
 	padding-top: 30px;
 	padding-bottom: 26px;
+	@media @tabletPortrait{
+		background-size: inherit;
+		background-position: right;
+	}
 	&>.wrapper{
-		width: 71%;
+		padding: 0 136px;
+		@media only screen and (max-width: 900px){
+			text-align: center;
+		}
+		@media @mobileLandscape{
+			padding: 0;
+		}
 	}
 	&__form-action{
 		right: 21px;
@@ -16,6 +26,9 @@
 		height: 111px;
 		padding-top: 60px;
 		font-size: 23px;
+		@media @mobileLandscape{
+			right: 0;
+		}
 	}
 	&__title{
 		color: #fff;
@@ -27,8 +40,28 @@
 		&>span{
 			color: #fe8b07;
 		}
+		@media @tabletPortrait{
+			padding-left: 0;
+		}
+		@media only screen and (max-width: 900px){
+			font-size: 30px;
+		}
+		@media @mobileLandscape{
+			text-align: left;
+			padding-right: 114px;
+			padding-left: 20px;
+		}
+		@media @mobilePortrait{
+			font-size: 28px;
+		}
 	}
 	&__form{
 		margin-top: 33px;
+		&:before{
+			display: none;
+		}
+		.top-block__form-topimage{
+			width: 100%;
+		}
 	}
 }

@@ -18,6 +18,14 @@
 		vertical-align: top;
 		position: relative;
 		padding: 0 2%;
+		@media @tabletPortrait{
+			padding: 0 1%;
+		}
+		@media @mobileLandscape{
+			width: 330px;
+			padding: 0px 20px;
+			margin-bottom: 20px;
+		}
 	}
 	&__image{
 		display: block;
@@ -36,6 +44,9 @@
 		padding: 9px 0 14px;
 		font-size: 36px;
 		line-height: 35px;
+		@media @tabletPortrait{
+			font-size: 30px;
+		}
 	}
 	&__tarif-container{
 		position: relative;
@@ -47,6 +58,9 @@
 		-moz-box-shadow: 2px 1px 8px 0px #CCCCCC;
 		box-shadow: 2px 1px 8px 0px #CCCCCC;
 		padding: 20px 20px 82px;
+		@media @tabletPortrait{
+			padding-bottom: 20px;
+		}
 	}
 	&__tarif-list{
 		margin: 0;
@@ -54,7 +68,8 @@
 		display: block;
 		list-style-type: none;
 		position: relative;
-		height: 338px;
+		min-height: 338px;
+
 	}
 	&__tarif-item{
 		display: block;
@@ -68,6 +83,9 @@
 		&:last-child{
 			border: none;
 		}
+		@media @tabletPortrait{
+			font-size: 16px;
+		}
 	}
 	&__tarif-info{
 		font-size: 24px;
@@ -75,6 +93,9 @@
 		margin: 0;
 		&>span{
 			font-weight: bold;
+		}
+		@media @tabletPortrait{
+			font-size: 20px;
 		}
 	}
 }
