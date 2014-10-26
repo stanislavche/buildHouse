@@ -763,8 +763,8 @@ header > .wrapper:after {
 .top-block__form-topimage {
   position: absolute;
   top: 0;
-  left: -0.3%;
-  width: 101%;
+  left: 0;
+  width: 100%;
 }
 .top-block__form-header {
   position: absolute;
@@ -976,7 +976,8 @@ header > .wrapper:after {
 }
 @media only screen and (max-width: 767px) {
   .type__item {
-    width: 330px;
+    width: auto;
+    max-width: 330px;
     padding: 0px 20px;
     margin-bottom: 20px;
   }
@@ -1663,7 +1664,13 @@ header > .wrapper:after {
 }
 @media only screen and (max-width: 480px) {
   .action__title {
-    font-size: 28px;
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .action__title {
+    font-size: 24px;
+    line-height: 24px;
   }
 }
 .action__form {
@@ -1712,6 +1719,15 @@ header > .wrapper:after {
     width: 55%;
   }
 }
+@media only screen and (max-width: 767px) {
+  .footer__left {
+    padding: 0 30px;
+    width: 100%;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+  }
+}
 .footer__right {
   float: right;
   color: #fff;
@@ -1734,6 +1750,17 @@ header > .wrapper:after {
   .footer__right {
     font-size: 26px;
     padding: 0 30px 0 0;
+  }
+  .footer__right > span {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer__right {
+    padding: 0 30px;
+    width: 100%;
+    font-size: 26px;
+    text-align: center;
   }
   .footer__right > span {
     font-size: 30px;
