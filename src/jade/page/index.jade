@@ -6,7 +6,7 @@ block content
 			.top-block__container
 				h1.top-block__title.text-center.text-shadow
 					| Построим дом Вашей мечты за 2 месяца в Ростове и области
-				form(action="#" name="joinheader")#formRegistration.top-block__form
+				form(action="#", name="joinheader", data-url="url")#formRegistration.top-block__form.js-formSubmit
 					img(src="img/formblick.png", alt="join form").top-block__form-image
 					img(src="img/top-arrow.png", alt="join form").top-block__form-topimage.z-index2
 					.top-block__form-header.text-center.z-index2
@@ -17,11 +17,11 @@ block content
 						label.text-center
 							p.form-text
 								|Введите имя
-							input(type="text").form-input
+							input(type="text", required, name="name").form-input
 						label.text-center
 							p.form-text
 								|Введите телефон
-							input(type="text").form-input
+							input(type="tel", required, name="phone").form-input.js-formNumber
 						button.form-button
 							| Рассчитать стоимость
 			ul.top-block__list.text-center
@@ -250,26 +250,26 @@ block content
 						| 3х этажных коттедж. 300 кв.метров. 6 мил, руб. построили 2 месяца.
 					.houses__item-container
 						.houses__items-gallary
-							a(href="#").js-colorboxGallary
+							a(href="img/preview/prev1.jpg", data-gallary="1").js-colorboxGallary
 								img(src="img/preview/prev1.jpg", alt="house1").houses__items-image
 							ul.houses__item-photo-list
 								li.houses__item-photo
-									a(href="#").js-colorboxGallary
+									a(href="img/preview/prev2.jpg", data-gallary="1").js-colorboxGallary
 										img(src="img/preview/prev2.jpg", alt="house2").houses__items-image
 								li.houses__item-photo
-									a(href="#").js-colorboxGallary
+									a(href="img/preview/prev3.jpg", data-gallary="1").js-colorboxGallary
 										img(src="img/preview/prev3.jpg", alt="house3").houses__items-image
 								li.houses__item-photo
-									a(href="#").js-colorboxGallary
+									a(href="img/preview/prev4.jpg", data-gallary="1").js-colorboxGallary
 										img(src="img/preview/prev4.jpg", alt="house4").houses__items-image
 								li.houses__item-photo
-									a(href="#").js-colorboxGallary
+									a(href="img/preview/prev2.jpg", data-gallary="1").js-colorboxGallary
 										img(src="img/preview/prev2.jpg", alt="house2").houses__items-image
 								li.houses__item-photo
-									a(href="#").js-colorboxGallary
+									a(href="img/preview/prev3.jpg", data-gallary="1").js-colorboxGallary
 										img(src="img/preview/prev3.jpg", alt="house3").houses__items-image
 								li.houses__item-photo
-									a(href="#").js-colorboxGallary
+									a(href="img/preview/prev4.jpg", data-gallary="1").js-colorboxGallary
 										img(src="img/preview/prev4.jpg", alt="house4").houses__items-image
 						.houses__items-info
 							p.houses__items-info-title
@@ -293,26 +293,26 @@ block content
 						| 3х этажных коттедж. 300 кв.метров. 6 мил, руб. построили 2 месяца.
 					.houses__item-container
 						.houses__items-gallary
-							a(href="#").js-colorboxGallary
+							a(href="img/preview/prev1.jpg", data-gallary="2").js-colorboxGallary
 								img(src="img/preview/prev1.jpg", alt="house1").houses__items-image
 							ul.houses__item-photo-list
 								li.houses__item-photo
-									a(href="#").js-colorboxGallary
+									a(href="img/preview/prev2.jpg", data-gallary="2").js-colorboxGallary
 										img(src="img/preview/prev2.jpg", alt="house2").houses__items-image
 								li.houses__item-photo
-									a(href="#").js-colorboxGallary
+									a(href="img/preview/prev3.jpg", data-gallary="2").js-colorboxGallary
 										img(src="img/preview/prev3.jpg", alt="house3").houses__items-image
 								li.houses__item-photo
-									a(href="#").js-colorboxGallary
+									a(href="img/preview/prev4.jpg", data-gallary="2").js-colorboxGallary
 										img(src="img/preview/prev4.jpg", alt="house4").houses__items-image
 								li.houses__item-photo
-									a(href="#").js-colorboxGallary
+									a(href="img/preview/prev2.jpg", data-gallary="2").js-colorboxGallary
 										img(src="img/preview/prev2.jpg", alt="house2").houses__items-image
 								li.houses__item-photo
-									a(href="#").js-colorboxGallary
+									a(href="img/preview/prev3.jpg", data-gallary="2").js-colorboxGallary
 										img(src="img/preview/prev3.jpg", alt="house3").houses__items-image
 								li.houses__item-photo
-									a(href="#").js-colorboxGallary
+									a(href="img/preview/prev4.jpg", data-gallary="2").js-colorboxGallary
 										img(src="img/preview/prev4.jpg", alt="house4").houses__items-image
 						.houses__items-info
 							p.houses__items-info-title
@@ -336,26 +336,26 @@ block content
 						| 3х этажных коттедж. 300 кв.метров. 6 мил, руб. построили 2 месяца.
 					.houses__item-container
 						.houses__items-gallary
-							a(href="#").js-colorboxGallary
+							a(href="img/preview/prev1.jpg", data-gallary="3").js-colorboxGallary
 								img(src="img/preview/prev1.jpg", alt="house1").houses__items-image
 							ul.houses__item-photo-list
 								li.houses__item-photo
-									a(href="#").js-colorboxGallary
+									a(href="img/preview/prev2.jpg", data-gallary="3").js-colorboxGallary
 										img(src="img/preview/prev2.jpg", alt="house2").houses__items-image
 								li.houses__item-photo
-									a(href="#").js-colorboxGallary
+									a(href="img/preview/prev3.jpg", data-gallary="3").js-colorboxGallary
 										img(src="img/preview/prev3.jpg", alt="house3").houses__items-image
 								li.houses__item-photo
-									a(href="#").js-colorboxGallary
+									a(href="img/preview/prev4.jpg", data-gallary="3").js-colorboxGallary
 										img(src="img/preview/prev4.jpg", alt="house4").houses__items-image
 								li.houses__item-photo
-									a(href="#").js-colorboxGallary
+									a(href="img/preview/prev2.jpg", data-gallary="3").js-colorboxGallary
 										img(src="img/preview/prev2.jpg", alt="house2").houses__items-image
 								li.houses__item-photo
-									a(href="#").js-colorboxGallary
+									a(href="img/preview/prev3.jpg", data-gallary="3").js-colorboxGallary
 										img(src="img/preview/prev3.jpg", alt="house3").houses__items-image
 								li.houses__item-photo
-									a(href="#").js-colorboxGallary
+									a(href="img/preview/prev4.jpg", data-gallary="3").js-colorboxGallary
 										img(src="img/preview/prev4.jpg", alt="house4").houses__items-image
 						.houses__items-info
 							p.houses__items-info-title
@@ -378,18 +378,18 @@ block content
 		.wrapper.text-center
 			h2.formcontent__title.section-title
 				| Ваш дом следующий!
-			form(action="#" name="joinheader").formcontent__form
+			form(action="#", data-url="url", name="joinheader").formcontent__form.js-formSubmit
 				img(src="img/formbotttom.png", alt="join form").top-block__form-image
 				img(src="img/blik.png", alt="join form").top-block__form-topimage.z-index1
 				.top-block__form-inputs.z-index2
 					label.text-center
 						p.form-text
 							|Введите имя
-						input(type="text").form-input
+						input(type="text", required, name="name").form-input
 					label.text-center
 						p.form-text
 							|Введите телефон
-						input(type="text").form-input
+						input(type="tel", required, name="phone").form-input.js-formNumber
 					button.form-button
 						| Рассчитать стоимость
 	section.reviews
@@ -434,13 +434,13 @@ block content
 				| наши лицензии
 			ul.safeguards__list.text-center
 				li.safeguards__item
-					a(href="#").safeguards__link.js-colorboxGallary
+					a(href="img/sertificates/sertificate.jpg", data-gallary="4").safeguards__link.js-colorboxGallary
 						img(src="img/sertificates/sertificate.jpg", alt="sertificate").safeguards__image
 				li.safeguards__item
-					a(href="#").safeguards__link.js-colorboxGallary
+					a(href="img/sertificates/sertificate.jpg", data-gallary="4").safeguards__link.js-colorboxGallary
 						img(src="img/sertificates/sertificate.jpg", alt="sertificate").safeguards__image
 				li.safeguards__item
-					a(href="#").safeguards__link.js-colorboxGallary
+					a(href="img/sertificates/sertificate.jpg", data-gallary="4").safeguards__link.js-colorboxGallary
 						img(src="img/sertificates/sertificate.jpg", alt="sertificate").safeguards__image
 	section.action
 		.top-block__form-action.z-index1.text-center.action__form-action
@@ -448,17 +448,17 @@ block content
 		.wrapper.text-right
 			h2.action__title
 				| Закажите бесплатный расчёт стоимости вашего дома сегодня и получите скидку <span>100’000 руб.</span> на строительные работы!
-			form(action="#" name="joinheader").formcontent__form.action__form
+			form(action="#", data-url="url", name="joinheader").formcontent__form.action__form.js-formSubmit
 				img(src="img/formbotttom.png", alt="join form").top-block__form-image
 				img(src="img/blik.png", alt="join form").top-block__form-topimage.z-index1
 				.top-block__form-inputs.z-index2
 					label.text-center
 						p.form-text
 							|Введите имя
-						input(type="text").form-input
+						input(type="text", required, name="name").form-input
 					label.text-center
 						p.form-text
 							|Введите телефон
-						input(type="text").form-input
+						input(type="tel", required, name="phone").form-input.js-formNumber
 					button.form-button
 						| Рассчитать стоимость
