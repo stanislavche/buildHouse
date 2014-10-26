@@ -1,6 +1,6 @@
 .houses{
 	position: relative;
-	padding-bottom: 55px;
+	padding-bottom: 30px;
 	&__title{
 		position: relative;
 		margin: 0;
@@ -10,7 +10,7 @@
 		margin: 0;
 		padding: 0;
 		width: 77%;
-		margin-left: 17%;
+		margin-left: 16%;
 	}
 	&__item{
 		position: relative;
@@ -37,6 +37,7 @@
 	&__items-image{
 		display: block;
 		width: 100%;
+		margin-bottom: 16px;
 	}
 	&__item-photo-list{
 		position: relative;
@@ -52,8 +53,9 @@
 		float: left;
 		width: 32%;
 		position: relative;
-		&+&{
-			margin-left: 2%;
+		margin-right: 2%;
+		&:nth-child(3n){
+			margin-right: 0;
 		}
 	}
 	&__items-info{

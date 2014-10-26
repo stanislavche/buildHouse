@@ -1,0 +1,38 @@
+.formcontent{
+	position: relative;
+	&__title{
+		text-transform: none;
+		font-size: 45px;
+	}
+	&__form{
+		margin-top: 18px;
+		display: inline-block;
+		position: relative;
+		width: 485px;
+		line-height: 1;
+		&:before{
+			content: "";
+			position: absolute;
+			top:0;
+			left: 0;
+			z-index: 1;
+			width: 99.5%;
+			height: 99%;
+			border: 1px solid #fe8b07;
+			border-radius: 12px;
+		}
+		.top-block__form-inputs{
+			bottom: 43px;
+		}
+		.form-input{
+			margin-bottom: 30px;
+			width: 310px;
+		}
+		.form-text{
+			text-align: left;
+			padding-left: 92px;
+			font-size: 24px;
+			line-height: 30px;
+		}
+	}
+}
